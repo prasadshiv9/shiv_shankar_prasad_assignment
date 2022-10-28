@@ -1,0 +1,58 @@
+body{
+    background-color: whitesmoke;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+
+.container h1{
+    color: rgb(45, 18, 97);
+}
+
+th,td {
+    border: 1px solid rgb(49, 44, 44);
+    padding: 10px;
+}
+
+
+#data {
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+
+#data input {
+    padding: 10px;
+    width: 100px;
+}
+#btn1, #btn2{
+    padding: 10px;
+    width: 90px;
+    color: antiquewhite;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#btn1:hover, #btn2:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+#btn1:active, #btn2:active{
+    opacity: 0.5;
+}
+    
+
+
+#tab {
+    counter-reset: serial-number;
+    }
+    #tab td:first-child:before {
+    counter-increment: serial-number;
+    content: counter(serial-number);
+    }
